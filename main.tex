@@ -1,0 +1,40 @@
+\documentclass[a4paper, 12pt]{article}
+\input{bibliotecas}
+
+\begin{document}
+\setstretch{1.5}
+\input{src/capa}
+\input{src/contra_capa}
+
+\clearpage
+\pagenumbering{roman}
+
+\newpage
+\input{src/resumo}
+
+\newpage
+\listoffigures
+
+\newpage
+\listoftables
+
+\newpage
+\tableofcontents
+% ------------
+\clearpage
+\pagenumbering{arabic}
+
+\input{src/introducao}
+\input{src/transformers}
+% \input{src/bert}
+% \input{src/llama}
+\input{src/metodologia_rag}
+
+% \input{image_seg}
+% \input{semantic_seg}
+% \input{instance_seg}
+% \input{panoptic_seg}
+\input{src/conclusao}
+\input{src/referencias}
+
+\end{document}

@@ -1,0 +1,9 @@
+\newpage
+\clearpage
+\section{Conclusão}
+
+O uso de \textit{Transformers} para o contexto de RAG, se fazem necessários na etapa de \textit{Generation} para a geração do texto, também como podem ser utilizados de forma positiva na etapa de \textit{Retrieval}, para a geração de \textit{embeddings} e encontrar a melhor relação entre os documentos de consulta e a \textit{query} de entrada.
+
+O processo de RAG pode conter diversas formas de implementação, dada a individualidade de cada estratégia. Uma das formas de aprimorar a geração de \textit{embeddings} é realizar o \textit{fine tuning} no modelo de \textit{embedding}, para que o modelo ganhe contexto ao realizar a tarefa de classificação e retornar os vetores com valores mais adequados para a relação de \textit{query} e documento. Também como estratégias de \textit{Augmentation} como o tratamento, resumo e preparação prévia dos documentos utilizados na consulta de RAG.
+
+Portanto, tendo em vista o conteúdo abordado na Seção \ref{latency}, um dos maiores pontos de desafio da implementação de um circuito de RAG, se dá pela latência de retorno das respostas, que pode impactar significativamente a experiência do usuário. Essa latência pode ser atribuída a vários fatores, incluindo a complexidade do algoritmo de recuperação, o modelo de embedding utilizado para realizar o \textit{Retrieval}, a quantidade de dados a serem processados, e a eficiência dos mecanismos de cache e indexação utilizados. Além disso, a latência pode ser exacerbada por limitações de infraestrutura, como largura de banda de rede e capacidade de processamento do servidor. Para mitigar esses efeitos, é essencial otimizar cada etapa do pipeline de recuperação e gerar resposta, além de considerar a adoção de técnicas avançadas de cache e balanceamento de carga para garantir uma resposta rápida e eficiente.
